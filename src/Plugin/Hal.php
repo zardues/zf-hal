@@ -755,7 +755,7 @@ class Hal extends AbstractHelper implements
         switch (true) {
             case (is_object($entity) && $metadataMap->has($entity)):
                 $halEntity = $this->createEntityFromMetadata($entity, $metadataMap->get($entity));
-                $halEntity = new Entity($entity, $halEntity->id);
+                //$halEntity = new Entity($entity, $halEntity->id);
                 break;
 
             case (! $entity instanceof Entity):
